@@ -1,9 +1,15 @@
 import react from 'react';
+import Tweet from './Tweet';
 
-const  Main = () => {
+
+
+function Main ()  {
     return (
-        <div>Main Component</div>
+        <div>Main Component
+  
+           <Tweet></Tweet>
+        </div>
     );
 }
 
-export default Main;
+export default Main
