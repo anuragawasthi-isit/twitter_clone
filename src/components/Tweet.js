@@ -9,17 +9,22 @@ import Time from "./Time";
 import { ICON_LOGO } from '../Icons'
 import LikeButton from "./Likebutton";
 
-function Tweet(){
+
+function Tweet(props){
 
     return (
         <div className='tweet'>
-      <Twiterratisnap/>
+          <img src="https://gravatar.com/avatar/nothing" alt='avatar' className='twtusersnap'/>
+     
       <div className="content">
-        <NameWithHandle /> 
-        <Time />
-        <Message />
+      <span className="name-with-handle">
+        <span className="name">Your Name</span>
+        <span className="handle">{props.Tweethandle}</span>
+      </span>
+      <span className="time">3h ago</span>
+      <div className="twtmsg">{props.TweetMessage}</div>
         <div class="button">
-            <LikeButton />
+        <button className="button" />
         </div>
       </div>
     </div>

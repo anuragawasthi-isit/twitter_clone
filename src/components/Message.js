@@ -2,9 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../index.css";
 
-function Message() {
+function Message(props) {
+  console.log(props)
     return (
-      <div className="twtmsg">This message is tweet than 140 characters!</div>
+     
+      <div className="twtmsg">{props.message}</div>
     );
   }
 

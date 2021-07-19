@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../index.css";
 
-function NameWithHandle() {
+function NameWithHandle(props) {
     return (
       <span className="name-with-handle">
         <span className="name">Your Name</span>
-        <span className="handle">@yourhandle</span>
+        <span className="handle">"demotweet"</span>
       </span>
     );
   }
