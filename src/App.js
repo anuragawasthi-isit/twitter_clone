@@ -6,11 +6,14 @@ import Sidebar from './components/partial/sidebar';
 import Main from './components/main';
 import { Router } from 'react-router-dom';
 import Register from './components/Register';
+import Tweet from './components/Tweet';
+
 
 function App() {
   return (
     <div className="App">
       
+
         <Navbar />
        
 
@@ -20,6 +23,7 @@ function App() {
           </div>
           <div className="col-lg-9">
               <Main/>
+              
             </div>
         </div>
     </div>

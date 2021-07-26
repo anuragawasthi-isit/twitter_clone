@@ -1,9 +1,18 @@
 import react from 'react';
+import Tweet from './Tweet';
+import Tweetdata from './Tweetdata';
 
-const  Main = () => {
+
+
+function Main ()  {
+    const TweetComponents = Tweetdata.map(tweeta => <Tweet key={tweeta.id} TweetMessage={tweeta.TweetMessage} Tweethandle={tweeta.Tweethandle} />)
+ 
     return (
-        <div>Main Component</div>
+        <div>Main Component
+  
+           {TweetComponents}
+        </div>
     );
 }
 
-export default Main;
+export default Main

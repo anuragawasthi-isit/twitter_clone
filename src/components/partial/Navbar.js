@@ -1,10 +1,7 @@
 import react from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-import { ICON_LOGO, ICON_HOME, ICON_HASH, ICON_BELL, ICON_INBOX
-    ,ICON_BOOKMARK, ICON_LIST, ICON_USER, ICON_SETTINGS, ICON_HOMEFILL, ICON_HASHFILL,
-    ICON_BELLFILL, ICON_BOOKMARKFILL, ICON_LISTFILL, ICON_USERFILL, ICON_FEATHER, 
-    ICON_CLOSE,ICON_IMGUPLOAD, ICON_INBOXFILL, ICON_LIGHT, ICON_DARK } from '../../Icons'
+import { ICON_LOGO } from '../../Icons'
 import Register from '../Register';
 const Navbar = () => {
     return(
